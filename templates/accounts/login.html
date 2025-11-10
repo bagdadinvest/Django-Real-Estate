@@ -182,17 +182,17 @@
             	{% include 'partials/_alerts.html' %}
               <form action="{% url "accounts:login_view" %}" method="POST">
               	{% csrf_token %}
-                <div class="form-group">
+                <div class="mb-3">
                   <label for="username">{% trans "Username" %}</label>
                   <input type="text" name="username" class="form-control" required>
                 </div>
 
-                <div class="form-group">
+                <div class="mb-3">
                   <label for="password2">{% trans "Password" %}</label>
                   <input type="password" name="password" class="form-control" required>
                 </div>
 
-                <input type="submit" value="{% trans "Login" %}" class="btn btn-secondary btn-block">
+                <input type="submit" value="{% trans "Login" %}" class="btn btn-secondary w-100">
               </form>
             </div>
           </div>

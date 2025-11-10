@@ -64,7 +64,7 @@
         {% block sidebar %}
           <aside class="sidebar">
             <div class="side">
-              <div class="form-group">
+              <div class="mb-3">
                 <form action="{% url 'blog:search' %}" method="GET">
                 <input type="text" class="form-control" name="q" value="{{request.GET.q}}" placeholder="{% trans 'Enter keywords & hit enter....' %}">
                 <button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
@@ -165,7 +165,7 @@
               <h2 class="sidebar-heading">{% trans "Subscribe to our newsletter" %}</h2>
               <div class="row">
                 <div class="col-md-12 col-md-offset-0">
-                  <div class="form-group">
+                  <div class="mb-3">
                     <input type="text" class="form-control form-email text-center" id="email" placeholder="{% trans 'Enter your email' %}">
                     <button type="submit" class="btn btn-primary btn-subscribe">{% trans "Subscribe" %}</button>
                   </div>

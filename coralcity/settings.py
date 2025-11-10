@@ -161,7 +161,16 @@ DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
 # Show Django Debug Toolbar locally when DEBUG is True
 if DEBUG:
-    INTERNAL_IPS = ['127.0.0.1']
+    # Common local loopback addresses; helps when not using plain 127.0.0.1
+    INTERNAL_IPS = ['127.0.0.1', 'localhost', '::1']
+
+    # Ensure the toolbar shows whenever DEBUG is on, regardless of client IP
+    def show_toolbar(request):
+        return True
+
+    DEBUG_TOOLBAR_CONFIG = {
+        'SHOW_TOOLBAR_CALLBACK': show_toolbar,
+    }
 
 
 

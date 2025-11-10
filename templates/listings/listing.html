@@ -90,19 +90,19 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-money-bill-alt"></i> {% trans "Asking Price:" %}
-                  <span class="float-right">₦{{listing.price | intcomma}}</span>
+                  <span class="float-end">₦{{listing.price | intcomma}}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bed"></i> {% trans "Bedrooms:" %}
-                  <span class="float-right">{{listing.bedrooms}}</span>
+                  <span class="float-end">{{listing.bedrooms}}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bath"></i> {% trans "Bathrooms:" %}
-                  <span class="float-right">{{listing.bathroom}}</span>
+                  <span class="float-end">{{listing.bathroom}}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-car"></i> {% trans "Type:" %}
-                  <span class="float-right">{{listing.property_type}}
+                  <span class="float-end">{{listing.property_type}}
                   </span>
                 </li>
               </ul>
@@ -111,20 +111,20 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-th-large"></i> {% trans "Square Feet:" %}
-                  <span class="float-right">{{listing.sqft}}</span>
+                  <span class="float-end">{{listing.sqft}}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-square"></i> {% trans "Lot Size:" %}
-                  <span class="float-right">{{listing.lot_size}} Acres
+                  <span class="float-end">{{listing.lot_size}} Acres
                   </span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-calendar"></i> {% trans "Listing Date:" %}
-                  <span class="float-right">{{listing.list_date}}</span>
+                  <span class="float-end">{{listing.list_date}}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bed"></i> {% trans "Realtor:" %}
-                  <span class="float-right">{{listing.realtor.name}}
+                  <span class="float-end">{{listing.realtor.name}}
                   </span>
                 </li>
 
@@ -150,21 +150,19 @@
                 <h6 class="text-secondary">{% trans "Email:" %} {{listing.realtor.email}}</h6>
             </div>
           </div>
-          <button class="btn main-btn pointer text-center animate btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">{% trans "Make An Inquiry" %}</button>
+          <button class="btn main-btn pointer text-center animate w-100 btn-lg" data-bs-toggle="modal" data-bs-target="#inquiryModal">{% trans "Make An Inquiry" %}</button>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Inquiry Modal -->
-  <div class="modal fade" id="inquiryModal" role="dialog">
+  <div class="modal fade" id="inquiryModal" tabindex="-1" aria-labelledby="inquiryModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="inquiryModalLabel">{% trans "Make An Inquiry" %}</h5>
-          <button type="button" class="close" data-dismiss="modal">
-            <span>&times;</span>
-          </button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <form method="POST" action="{% url "contacts:contact" %}">
@@ -176,34 +174,33 @@
             {% endif %}
             <input type="hidden" name="realtor_email" value="{{listing.realtor.email}}">
             <input type="hidden" name="listing_id" value="{{listing.id}}">
-            <div class="form-group">
+            <div class="mb-3">
               <label for="property_name" class="col-form-label">{% trans "Property:" %}</label>
               <input value="{{listing.title}}" type="text" name="listing" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="name" class="col-form-label">{% trans "Name:" %}</label>
               <input {% if user.is_authenticated %} value="{{user.username}}" {% endif %}  type="text" name="name" class="form-control" required>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="email" class="col-form-label">{% trans "Email:" %}</label>
               <input {% if user.is_authenticated %} value="{{user.email}}"{% endif %}  type="email" name="email" class="form-control" required>
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="phone" class="col-form-label">{% trans "Phone:" %}</label>
               <input {% if user.is_authenticated %} value="{{user.phone}}"{% endif %} type="text" name="phone" class="form-control">
             </div>
-            <div class="form-group">
+            <div class="mb-3">
               <label for="message" class="col-form-label">{% trans "Message:" %}</label>
               <textarea name="message" class="form-control"></textarea>
             </div>
             <hr>
-            <input type="submit" value="{% trans "Send" %}" class="btn btn-block btn-secondary">
+            <input type="submit" value="{% trans "Send" %}" class="btn w-100 btn-secondary">
           </form>
         </div>
       </div>
     </div>
   </div>
 {% endblock content %}
-
 
 

@@ -43,19 +43,19 @@
             	{% include 'partials/_alerts.html' %}
               <form method="POST" enctype="multipart/form-data" action="">
                 {% csrf_token %}
-                 <div class="form-group">
+                 <div class="mb-3">
                   <label for="username">{% trans "Full Name" %}</label>
                   <input type="text" name="name" class="form-control" required>
                 </div>
-                 <div class="form-group">
+                 <div class="mb-3">
                   <label for="username">{% trans "Email" %}</label>
                   <input type="text" name="email" class="form-control" required>
                 </div>
-                 <div class="form-group">
+                 <div class="mb-3">
                   <label for="username">{% trans "Phone Number" %}</label>
                   <input type="text" name="phone" class="form-control" required>
                 </div>
-                 <div class="form-group">
+                 <div class="mb-3">
                   <label for="username">{% trans "Document File:" %} </label>
                  <input type="file" name="upload_file">
                 </div>

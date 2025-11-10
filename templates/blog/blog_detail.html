@@ -41,7 +41,7 @@
 {% endif %}
 
 
-  <div class="form-group">
+  <div class="mb-3">
     <form action="{% url 'blog:send_comment' post.slug %}" method="POST">
       {% csrf_token %}
       <input type="hidden" name="post_id" value="{{ post.id }}">

@@ -121,11 +121,32 @@ def map_data(request):
             "address": obj.address,
             "url": f"/listings/{obj.id}/",
         }
+        # Collect available photos for swipeable gallery in popup
+        photos = []
         try:
             if obj.photo_main:
-                properties["photo_url"] = obj.photo_main.url
+                photos.append(obj.photo_main.url)
         except Exception:
             pass
+        for field in [
+            "photo_1",
+            "photo_2",
+            "photo_3",
+            "photo_4",
+            "photo_5",
+            "photo_6",
+        ]:
+            try:
+                img = getattr(obj, field)
+                if img:
+                    photos.append(img.url)
+            except Exception:
+                # Skip if file missing or storage not accessible
+                continue
+        if photos:
+            properties["photos"] = photos
+            # Keep legacy single photo key for backward-compat
+            properties["photo_url"] = photos[0]
 
         features.append({
             "type": "Feature",
