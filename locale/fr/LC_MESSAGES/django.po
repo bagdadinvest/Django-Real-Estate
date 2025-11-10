@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: KoralCity\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-09 21:44+0000\n"
+"PO-Revision-Date: 2025-11-09 21:55+0000\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+# Core/navigation
+msgid "KoralCity Properties"
+msgstr "Propriétés KoralCity"
+
+msgid "Home"
+msgstr "Accueil"
+
+msgid "About"
+msgstr "À propos"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Properties"
+msgstr "Propriétés"
+
+msgid "Verification"
+msgstr "Vérification"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Agents"
+msgstr "Agents"
+
+msgid "Become an agent"
+msgstr "Devenir agent"
+
+msgid "Become an Agent"
+msgstr "Devenir agent"
+
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+msgid "User Dashboard"
+msgstr "Tableau de bord utilisateur"
+
+msgid "Manage your KoralCity Properties account"
+msgstr "Gérez votre compte KoralCity Properties"
+
+msgid "Welcome"
+msgstr "Bienvenue"
+
+msgid "Property"
+msgstr "Propriété"
+
+msgid "View Listing"
+msgstr "Voir l'annonce"
+
+msgid "You Don't Have Any Inquiries"
+msgstr "Vous n'avez aucune demande"
+
+# Index & common
+msgid "Search"
+msgstr "Rechercher"
+
+msgid "Keyword"
+msgstr "Mot-clé"
+
+msgid "More Info"
+msgstr "Plus d'infos"
+
+msgid "No Listings Available"
+msgstr "Aucune annonce disponible"
+
+msgid "Type"
+msgstr "Type"
+
+msgid "Bathroom"
+msgstr "Salle de bain"
+
+msgid "Bedroom"
+msgstr "Chambre"
+
+msgid "Garage"
+msgstr "Garage"
+
+msgid "Consulting Services"
+msgstr "Services de conseil"
+
+msgid "Property Management"
+msgstr "Gestion immobilière"
+
+msgid "Renting & Selling"
+msgstr "Location et vente"
+
+msgid "Scroll Down"
+msgstr "Faire défiler"
+
+msgid "More Than 500+<br>Apartments For Sale & Rent"
+msgstr "Plus de 500+<br>appartements à vendre et à louer"
+
+# Accounts pages
+msgid "How it works?"
+msgstr "Comment ça marche ?"
+
+msgid "Find Your Location"
+msgstr "Trouvez votre emplacement"
+
+msgid "Find Apartment"
+msgstr "Trouver un appartement"
+
+msgid "Make Contact"
+msgstr "Prendre contact"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Building"
+msgstr "Construction"
+
+msgid "Login"
+msgstr "Connexion"
+
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Register"
+msgstr "Inscription"
+
+msgid "First Name"
+msgstr "Prénom"
+
+msgid "Last Name"
+msgstr "Nom"
+
+msgid "Email"
+msgstr "E-mail"
+
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+msgid "Register now and receive a mail from us within 2 working days."
+msgstr "Inscrivez-vous maintenant et recevez un e-mail de notre part sous 2 jours ouvrés."
+
+# Listings pages
+msgid "Listing"
+msgstr "Annonce"
+
+msgid "Back To Listings"
+msgstr "Retour aux annonces"
+
+msgid "Asking Price:"
+msgstr "Prix demandé :"
+
+msgid "Bedrooms:"
+msgstr "Chambres :"
+
+msgid "Bathrooms:"
+msgstr "Salles de bain :"
+
+msgid "Type:"
+msgstr "Type :"
+
+msgid "Square Feet:"
+msgstr "Surface (pieds²) :"
+
+msgid "Lot Size:"
+msgstr "Taille du lot :"
+
+msgid "Listing Date:"
+msgstr "Date de mise en vente :"
+
+msgid "Realtor:"
+msgstr "Agent :"
+
+msgid "Property Realtor"
+msgstr "Agent immobilier"
+
+msgid "Realtor name:"
+msgstr "Nom de l'agent :"
+
+msgid "Number:"
+msgstr "Numéro :"
+
+msgid "Email:"
+msgstr "E-mail :"
+
+msgid "Make An Inquiry"
+msgstr "Faire une demande"
+
+msgid "Property:"
+msgstr "Propriété :"
+
+msgid "Name:"
+msgstr "Nom :"
+
+msgid "Phone:"
+msgstr "Téléphone :"
+
+msgid "Message:"
+msgstr "Message :"
+
+msgid "Send"
+msgstr "Envoyer"
+
+msgid "Sqft"
+msgstr "Pieds²"
+
+# Search
+msgid "Keywords"
+msgstr "Mots-clés"
+
+msgid "Keyword (Pool, Garage, etc)"
+msgstr "Mot-clé (Piscine, Garage, etc.)"
+
+msgid "City"
+msgstr "Ville"
+
+msgid "State"
+msgstr "État"
+
+msgid "State (All)"
+msgstr "État (Tous)"
+
+msgid "Bedrooms"
+msgstr "Chambres"
+
+msgid "Bedrooms (Any)"
+msgstr "Chambres (Toutes)"
+
+msgid "Max Price (All)"
+msgstr "Prix max (Tous)"
+
+msgid "Submit form"
+msgstr "Envoyer le formulaire"
+
+# AGIS Verification
+msgid "Full Name"
+msgstr "Nom complet"
+
+msgid "Phone Number"
+msgstr "Numéro de téléphone"
+
+msgid "Document File:"
+msgstr "Fichier du document :"
+
+msgid "Upload"
+msgstr "Télécharger"
+
+msgid "Return to home"
+msgstr "Retour à l'accueil"
+
+# Blog
+msgid "Blog App"
+msgstr "Application Blog"
+
+msgid "Production:"
+msgstr "Production :"
+
+msgid "by"
+msgstr "par"
+
+msgid "Comments"
+msgstr "Commentaires"
+
+msgid "Continue Reading"
+msgstr "Continuer la lecture"
+
+msgid "Enter keywords & hit enter...."
+msgstr "Entrez des mots-clés et appuyez sur Entrée..."
+
+msgid "About Me"
+msgstr "À propos de moi"
+
+msgid "Recent Post"
+msgstr "Article récent"
+
+msgid "Categories"
+msgstr "Catégories"
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "Subscribe to our newsletter"
+msgstr "Abonnez-vous à notre newsletter"
+
+msgid "Enter your email"
+msgstr "Entrez votre e-mail"
+
+msgid "Subscribe"
+msgstr "S'abonner"
+
+msgid "There is no comment"
+msgstr "Il n'y a aucun commentaire"

@@ -1,0 +1,65 @@
+{% load static %}
+{% load i18n %}
+<!-- Navbar -->
+ <header id="home">
+
+<nav class="animate">
+        <div class="container">
+          <div class="logo left">
+            <!-- Logo -->
+            <img src="{% static './images/logo.png' %} " height="50", width="80">
+            
+            </li>
+          </div>
+          <div class="menu-button hide right pointer" style=" color:  black;">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu left">
+            <div class="page-menu left">
+              <!-- Navigation -->
+              <li><a href="{% url 'pages:index' %}">{% trans "Home" %}</a></li>
+              <li><a href="{% url 'pages:about' %}">{% trans "About" %}</a></li>
+              <li><a href="{% url 'blog:blog' %}">{% trans "Blog" %}</a></li>
+              <li><a href="{% url 'listings:listings' %}">{% trans "Properties" %}</a></li>
+              <li><a href="{% url 'Ages:Ages' %}">{% trans "Verification" %}</a></li>
+              <li><a href="#contact">{% trans "Contact" %}</a></li>
+            </div>
+            <div class="registration flex-center">
+              <div class="join-us">
+                <!-- Join Us Button -->
+                    <li class="pointer animate"><a href="{% url 'accounts:login_view' %}">{% trans "Agents" %}</a>
+                 </li>    
+                </div>
+                  <div class="getting-started">
+                    <!-- Get Started Button -->
+                   <a href="{% url 'accounts:register_view' %}"><li class="main-btn pointer text-center animate">{% trans "Become an agent" %}</li></a>
+                  </div>
+                </div>
+                <!-- Language Switcher -->
+                <div class="registration flex-center" style="margin-left: 10px;">
+                  <form action="{% url 'set_language' %}" method="post">
+                    {% csrf_token %}
+                    <input name="next" type="hidden" value="{{ request.path }}">
+                    <select name="language" onchange="this.form.submit()">
+                      {% get_current_language as LANGUAGE_CODE %}
+                      {% get_available_languages as LANGUAGES %}
+                      {% for lang in LANGUAGES %}
+                        <option value="{{ lang.0 }}" {% if lang.0 == LANGUAGE_CODE %}selected{% endif %}>{{ lang.1 }}</option>
+                      {% endfor %}
+                    </select>
+                  </form>
+                </div>
+                <div class="registration flex-center">
+                  <div class="join-us">
+                    <!-- Join Us Button -->
+                 
+              </div>
+              <div class="getting-started">
+                <!-- Get Started Button -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>

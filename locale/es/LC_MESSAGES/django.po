@@ -1,0 +1,300 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: KoralCity\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-09 21:44+0000\n"
+"PO-Revision-Date: 2025-11-09 21:55+0000\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# Core/navigation
+msgid "KoralCity Properties"
+msgstr "Propiedades KoralCity"
+
+msgid "Home"
+msgstr "Inicio"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid "Blog"
+msgstr "Blog"
+
+msgid "Properties"
+msgstr "Propiedades"
+
+msgid "Verification"
+msgstr "Verificación"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Agents"
+msgstr "Agentes"
+
+msgid "Become an agent"
+msgstr "Hazte agente"
+
+msgid "Become an Agent"
+msgstr "Hazte agente"
+
+msgid "Dashboard"
+msgstr "Panel"
+
+msgid "User Dashboard"
+msgstr "Panel de usuario"
+
+msgid "Manage your KoralCity Properties account"
+msgstr "Administra tu cuenta de KoralCity Properties"
+
+msgid "Welcome"
+msgstr "Bienvenido"
+
+msgid "Property"
+msgstr "Propiedad"
+
+msgid "View Listing"
+msgstr "Ver anuncio"
+
+msgid "You Don't Have Any Inquiries"
+msgstr "No tienes consultas"
+
+# Index & common
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Keyword"
+msgstr "Palabra clave"
+
+msgid "More Info"
+msgstr "Más información"
+
+msgid "No Listings Available"
+msgstr "No hay anuncios disponibles"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Bathroom"
+msgstr "Baño"
+
+msgid "Bedroom"
+msgstr "Dormitorio"
+
+msgid "Garage"
+msgstr "Garaje"
+
+msgid "Consulting Services"
+msgstr "Servicios de consultoría"
+
+msgid "Property Management"
+msgstr "Administración de propiedades"
+
+msgid "Renting & Selling"
+msgstr "Alquiler y venta"
+
+msgid "Scroll Down"
+msgstr "Desplazar hacia abajo"
+
+msgid "More Than 500+<br>Apartments For Sale & Rent"
+msgstr "Más de 500+<br>apartamentos en venta y alquiler"
+
+# Accounts pages
+msgid "How it works?"
+msgstr "¿Cómo funciona?"
+
+msgid "Find Your Location"
+msgstr "Encuentra tu ubicación"
+
+msgid "Find Apartment"
+msgstr "Encontrar apartamento"
+
+msgid "Make Contact"
+msgstr "Ponerse en contacto"
+
+msgid "Services"
+msgstr "Servicios"
+
+msgid "Building"
+msgstr "Construcción"
+
+msgid "Login"
+msgstr "Iniciar sesión"
+
+msgid "Username"
+msgstr "Usuario"
+
+msgid "Password"
+msgstr "Contraseña"
+
+msgid "Register"
+msgstr "Registrarse"
+
+msgid "First Name"
+msgstr "Nombre"
+
+msgid "Last Name"
+msgstr "Apellido"
+
+msgid "Email"
+msgstr "Correo electrónico"
+
+msgid "Confirm Password"
+msgstr "Confirmar contraseña"
+
+msgid "Register now and receive a mail from us within 2 working days."
+msgstr "Regístrate ahora y recibirás un correo nuestro en 2 días hábiles."
+
+# Listings pages
+msgid "Listing"
+msgstr "Anuncio"
+
+msgid "Back To Listings"
+msgstr "Volver a anuncios"
+
+msgid "Asking Price:"
+msgstr "Precio solicitado:"
+
+msgid "Bedrooms:"
+msgstr "Dormitorios:"
+
+msgid "Bathrooms:"
+msgstr "Baños:"
+
+msgid "Type:"
+msgstr "Tipo:"
+
+msgid "Square Feet:"
+msgstr "Pies cuadrados:"
+
+msgid "Lot Size:"
+msgstr "Tamaño del lote:"
+
+msgid "Listing Date:"
+msgstr "Fecha de listado:"
+
+msgid "Realtor:"
+msgstr "Agente:"
+
+msgid "Property Realtor"
+msgstr "Agente inmobiliario"
+
+msgid "Realtor name:"
+msgstr "Nombre del agente:"
+
+msgid "Number:"
+msgstr "Número:"
+
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+msgid "Make An Inquiry"
+msgstr "Hacer una consulta"
+
+msgid "Property:"
+msgstr "Propiedad:"
+
+msgid "Name:"
+msgstr "Nombre:"
+
+msgid "Phone:"
+msgstr "Teléfono:"
+
+msgid "Message:"
+msgstr "Mensaje:"
+
+msgid "Send"
+msgstr "Enviar"
+
+msgid "Sqft"
+msgstr "Pies²"
+
+# Search
+msgid "Keywords"
+msgstr "Palabras clave"
+
+msgid "Keyword (Pool, Garage, etc)"
+msgstr "Palabra clave (Piscina, Garaje, etc.)"
+
+msgid "City"
+msgstr "Ciudad"
+
+msgid "State"
+msgstr "Estado"
+
+msgid "State (All)"
+msgstr "Estado (Todos)"
+
+msgid "Bedrooms"
+msgstr "Dormitorios"
+
+msgid "Bedrooms (Any)"
+msgstr "Dormitorios (Cualquiera)"
+
+msgid "Max Price (All)"
+msgstr "Precio máx (Todos)"
+
+msgid "Submit form"
+msgstr "Enviar formulario"
+
+# AGIS Verification
+msgid "Full Name"
+msgstr "Nombre completo"
+
+msgid "Phone Number"
+msgstr "Número de teléfono"
+
+msgid "Document File:"
+msgstr "Archivo del documento:"
+
+msgid "Upload"
+msgstr "Subir"
+
+msgid "Return to home"
+msgstr "Volver al inicio"
+
+# Blog
+msgid "Blog App"
+msgstr "Aplicación Blog"
+
+msgid "Production:"
+msgstr "Producción:"
+
+msgid "by"
+msgstr "por"
+
+msgid "Comments"
+msgstr "Comentarios"
+
+msgid "Continue Reading"
+msgstr "Seguir leyendo"
+
+msgid "Enter keywords & hit enter...."
+msgstr "Introduce palabras clave y pulsa Enter..."
+
+msgid "About Me"
+msgstr "Sobre mí"
+
+msgid "Recent Post"
+msgstr "Publicación reciente"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Tags"
+msgstr "Etiquetas"
+
+msgid "Subscribe to our newsletter"
+msgstr "Suscríbete a nuestro boletín"
+
+msgid "Enter your email"
+msgstr "Introduce tu correo electrónico"
+
+msgid "Subscribe"
+msgstr "Suscribirse"
+
+msgid "There is no comment"
+msgstr "No hay comentarios"
