@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
+from listings import views as listing_views
 from graphene_django.views import GraphQLView
 from blog.schema import schema
 from pages import views
@@ -36,6 +38,13 @@ urlpatterns = [
     path('AgesVerification/', include('Ages.urls')),
     path('graphql/', GraphQLView.as_view(graphiql=True)),
     path('blog/', include('blog.urls')),
+    # New frontend demo routes
+    path('new/', TemplateView.as_view(template_name='newfrontend/index.html'), name='new_index'),
+    path('new/properties/', listing_views.new_properties, name='new_properties'),
+    path('new/property-details/', TemplateView.as_view(template_name='newfrontend/property-details.html'), name='new_property_details'),
+    path('new/listing/<int:listing_id>/', listing_views.new_listing_detail, name='new_listing_detail'),
+    path('new/contact/', TemplateView.as_view(template_name='newfrontend/contact.html'), name='new_contact'),
+    path('new/map/', listing_views.new_map_view, name='new_map'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

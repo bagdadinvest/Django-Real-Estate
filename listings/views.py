@@ -16,6 +16,20 @@ def index(request):
 	return render(request,'listings/listings.html',{'listings' : paged_listings})
 
 
+def new_properties(request):
+	"""Render the new frontend properties page with the same listings data/pagination."""
+	listings = Listing.objects.all().order_by('-list_date').filter(is_published=True)
+	paginator = Paginator(listings, 6)
+	page = request.GET.get('page')
+	paged_listings = paginator.get_page(page)
+	return render(request, 'newfrontend/properties.html', {'listings': paged_listings})
+
+
+def new_listing_detail(request, listing_id):
+	listing = get_object_or_404(Listing, pk=listing_id)
+	return render(request, 'newfrontend/property-details.html', {'listing': listing})
+
+
 def listing(request , listing_id):
 	listing = get_object_or_404(Listing , pk=listing_id)
 	context = {
@@ -161,3 +175,8 @@ def map_data(request):
         "type": "FeatureCollection",
         "features": features,
     })
+
+
+def new_map_view(request):
+	"""Render the new frontend map page."""
+	return render(request, 'newfrontend/map.html')

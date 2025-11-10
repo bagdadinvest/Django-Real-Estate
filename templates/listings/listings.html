@@ -68,7 +68,7 @@
                       <div class="col-6 text-secondary">
                        <p> <i class="fas fa-bed"></i> {% trans "Bedroom" %}: {{listing.bedrooms}}</p></div>
                     </div>
-                    <a href="{% url "listings:listing" listing.id %}" class="btn main-btn pointer text-center animate">{% trans "More Info" %}</a>
+                    <a href="{% url 'new_listing_detail' listing.id %}" class="btn main-btn pointer text-center animate">{% trans "More Info" %}</a>
                   </div>
                 </div>
               </div>
